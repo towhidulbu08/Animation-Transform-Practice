@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My animation</title>
+    <style>
+        @keyframes climbing {
+          0%{
+            background:lightpink;
+            left:0px;
+            top:0px;
+          } 
+          25%{
+            top:320px;
+          }
+          50%{
+            top:0px;
+            /* left:0px; */
+          } 
+          75%{
+            top:320px;
+          }
+          100%{
+            background:lightgreen;
+            top:0px;
+            left:720px;
+            
+          }
+        }
+        .area{
+            width:800px;
+            height:400px;
+            background:darkslateblue;
+        }
+        .ball{
+            background:lightcoral;
+            height:80px;
+            width:80px;
+            border-radius:40px;
+            animation: climbing 2s ease .111s infinite
+             alternate;
+             animation-play-state: running;
+             position:relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="area">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

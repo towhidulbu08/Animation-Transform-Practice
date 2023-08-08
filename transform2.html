@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition web</title>
+    <style>
+        .box-container,.inner{
+        width:150px;
+        height:130px;
+        border:3px solid gold;
+        background:palevioletred;
+        }
+        .inner{
+            /* height:90px;
+            width:90px;
+            border:3px solid deepskyblue; */
+            background:palegreen;
+            transform:scale(.5) translateY(40px) rotate(50deg);
+        }
+    </style>
+</head>
+<body>
+  <div class="box-container">
+    <div class="inner">box1</div>
+  </div>
+  <div class="box-container">
+    <div class="inner">box2</div>
+  </div>
+  <div class="box-container">
+    <div class="inner">box3</div>
+  </div>
+</body>
+</html>

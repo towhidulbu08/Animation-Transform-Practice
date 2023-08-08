@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Html</title>
+    <style>
+        .field:hover .bat{
+         transform:rotate(-60deg);
+         transform-origin:right top;
+        }
+        .field{
+            border:3px solid palevioletred;
+        }
+        .bat{
+            transition:transform .5s ease-in;
+        }
+        .ball{
+            width:50px;
+            height:50px;
+            background:paleturquoise;
+            border-radius:25px;
+            position:relative;
+            left:515px;
+            /* transform:rotate(70deg); */
+            
+        }
+        .field:hover .ball{
+            transform:translate(900px ,-200px);
+            transition: transform 1.8s ease-out .56s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="field"><img class="bat" src="images/cricker-bat.png" alt="">
+    <div class="ball"></div></div>
+</body>
+</html>
